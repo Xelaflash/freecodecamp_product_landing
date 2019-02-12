@@ -5,40 +5,103 @@
   <title>FreecodeCamp Product Landing Pager</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
 <body>
 
   <header id="header">
-    <a href="#">
+    <a href="#home">
     <img id="header-img" src="images/logo.png" alt="logo">
     </a>
     <nav id="nav-bar">
-      <a href="#" class="nav-link">About</a>
-      <a href="#" class="nav-link">Products</a>
-      <a href="#" class="nav-link">Pricing</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#infos" class="nav-link">Infos</a>
+      <a href="#pricing" class="nav-link">Pricing</a>
     </nav>
   </header>
 
-  <h1 id="title">The ultimate Guitar Maker</h1>
-  <hr class="sep">
-  <div id="video">
-    <iframe width="660" height="415" src="https://www.youtube.com/embed/fze_k0qlV2g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-
-  <form>
-    <div class="form-group" data-validate="Valid email is required: ex@abc.xyz">
-      <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  <div id="home">
+    <h1 id="title">The ultimate Guitar Maker</h1>
+    <hr class="sep">
+    <div id="about">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus sequi deserunt minima, culpa. Tempora nesciunt, illum similique. Vel, explicabo, enim? Maiores sunt labore eius rerum iusto ullam iste, consectetur ut.
     </div>
-    <button type="submit" class="btn btn-primary">Suscribe</button>
-  </form>
+    <div id="video1">
+      <iframe id="video" width="660" height="415" src="https://www.youtube.com/embed/fze_k0qlV2g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 
+    <hr class="sep">
+    <div id="infos">
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <div class="form-group newsletter-suscribe" data-validate="Valid email is required: ex@abc.xyz">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required="">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+<!--         <input id="submit" class="btn btn-primary" type="submit"> -->
+          <button  type="submit" class="btn btn-primary">Suscribe</button>
+      </form>
+    </div>
+    <hr class="sep">
 
-
-
-
-
-
+    <div class="pricing-cards" id="pricing">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="pricingTable">
+              <div class="pricingTable-header">
+                <h3 class="title">Standard</h3>
+                <div class="price-value">
+                  <span class="currency">$</span>
+                  <span class="amount">500</span>
+                </div>
+              </div>
+              <ul class="pricing-content">
+                <li>Basic wood</li>
+                <li>Basic strings</li>
+                <li>Standard size</li>
+              </ul>
+              <a href="#" class="pricingTable-signup">Buy</a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="pricingTable magenta">
+              <div class="pricingTable-header">
+                <h3 class="title">Pro</h3>
+                <div class="price-value">
+                  <span class="currency">$</span>
+                  <span class="amount">2000</span>
+                </div>
+              </div>
+              <ul class="pricing-content">
+                <li>High quality wood</li>
+                <li>prenium strings</li>
+                <li>4 sizes</li>
+              </ul>
+              <a href="#" class="pricingTable-signup">Buy</a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="pricingTable blue">
+              <div class="pricingTable-header">
+                <h3 class="title">Ultimate</h3>
+                <div class="price-value">
+                    <span class="currency">$</span>
+                    <span class="amount">5000</span>
+                </div>
+              </div>
+              <ul class="pricing-content">
+                <li>choose your wood</li>
+                <li>choose your strings</li>
+                <li>custom sizes</li>
+              </ul>
+              <a href="#" class="pricingTable-signup">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
