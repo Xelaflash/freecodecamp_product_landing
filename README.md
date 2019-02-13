@@ -4,4 +4,4 @@
 permalink: /index.html
 ---
 
-Mpck-up page for FreecodeCamp front End certification (2019)
+Mock-up page for FreecodeCamp front End certification (2019)
